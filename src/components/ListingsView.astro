@@ -1,0 +1,454 @@
+---
+import PropertyCard from "./PropertyCard.astro";
+import ListingsHeader from "./ListingsHeader.astro";
+import ListingsFilter from "./ListingsFilter.astro";
+import Pagination from "./Pagination.astro";
+import propertiesData from "../data/properties.json";
+import { Search } from "lucide-astro";
+
+interface Props {
+    forcedType?: string;
+    title?: string;
+}
+
+const { forcedType, title: initialTitle = "Properties for Sale & Rent" } =
+    Astro.props;
+
+const searchParams = Astro.url.searchParams;
+const typeParam = forcedType || searchParams.get("type") || "All";
+const statusParam = searchParams.get("status") || "All";
+const priceRangeParam = searchParams.get("priceRange") || "All Prices";
+const bedsParam = searchParams.get("beds") || "Any";
+const searchQuery = searchParams.get("q") || "";
+const sortParam = searchParams.get("sort") || "Newest";
+
+// Dynamic Title Logic
+let title = initialTitle;
+if (statusParam === "sale" && initialTitle === "Properties for Sale & Rent") {
+    title = "Properties for Sale";
+} else if (
+    statusParam === "rent" &&
+    initialTitle === "Properties for Sale & Rent"
+) {
+    title = "Properties for Rent";
+}
+
+const types = ["All", "House", "Unit", "Townhouse", "Land"];
+const priceRanges = [
+    { label: "All Prices", min: 0, max: 100000000 },
+    { label: "Under $1M", min: 0, max: 1000000 },
+    { label: "$1M - $2M", min: 1000000, max: 2000000 },
+    { label: "$2M - $5M", min: 2000000, max: 5000000 },
+    { label: "$5M+", min: 5000000, max: 100000000 },
+];
+const bedsOptions = ["Any", "1+", "2+", "3+", "4+", "5+"];
+
+let minPriceParam = 0;
+let maxPriceParam = 100000000;
+const currentRange = priceRanges.find((r) => r.label === priceRangeParam);
+if (currentRange) {
+    minPriceParam = currentRange.min;
+    maxPriceParam = currentRange.max;
+}
+
+const filteredProperties = propertiesData.filter((p) => {
+    const matchesType =
+        typeParam === "All" || p.type.toLowerCase() === typeParam.toLowerCase();
+    const matchesStatus =
+        statusParam === "All" ||
+        p.status.toLowerCase() === statusParam.toLowerCase();
+    const matchesPrice = p.price >= minPriceParam && p.price <= maxPriceParam;
+    const matchesBeds = bedsParam === "Any" || p.beds >= parseInt(bedsParam[0]);
+    const matchesSearch =
+        !searchQuery ||
+        p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        p.location.toLowerCase().includes(searchQuery.toLowerCase());
+
+    return (
+        matchesType &&
+        matchesStatus &&
+        matchesPrice &&
+        matchesBeds &&
+        matchesSearch
+    );
+});
+
+// Sort Logic
+let sortedProperties = [...filteredProperties];
+if (sortParam === "Price: Low to High") {
+    sortedProperties.sort((a, b) => a.price - b.price);
+} else if (sortParam === "Price: High to Low") {
+    sortedProperties.sort((a, b) => b.price - a.price);
+} else if (sortParam === "Beds: Most") {
+    sortedProperties.sort((a, b) => b.beds - a.beds);
+} else {
+    // Default to newest (id descending)
+    sortedProperties.sort((a, b) => parseInt(b.id) - parseInt(a.id));
+}
+
+// Pagination Logic
+const ITEMS_PER_PAGE = 4;
+const totalPages = Math.max(
+    1,
+    Math.ceil(sortedProperties.length / ITEMS_PER_PAGE),
+);
+const pageParam = parseInt(searchParams.get("page") || "1");
+const currentPage = Math.max(1, Math.min(pageParam || 1, totalPages));
+
+const startIdx = (currentPage - 1) * ITEMS_PER_PAGE;
+const paginatedProperties = sortedProperties.slice(
+    startIdx,
+    startIdx + ITEMS_PER_PAGE,
+);
+
+// Construct Base URL for Pagination Links
+const params = new URLSearchParams(searchParams);
+params.delete("page");
+const queryStr = params.toString();
+const currentPath = Astro.url.pathname;
+const baseUrl = currentPath + "?" + (queryStr ? queryStr + "&" : "");
+---
+
+<ListingsHeader count={filteredProperties.length} title={title} />
+
+<section class="py-12 bg-background-base min-h-screen">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-12">
+            <!-- Mobile Filter Toggle Button -->
+            {
+                !forcedType && (
+                    <div class="lg:hidden flex justify-center mb-4">
+                        <button
+                            id="filter-toggle-btn"
+                            class="flex items-center space-x-2 bg-primary text-white px-6 py-3 rounded-xl font-bold hover:bg-secondary transition-all shadow-lg"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
+                                />
+                            </svg>
+                            <span>Show Filters</span>
+                        </button>
+                    </div>
+                )
+            }
+
+            <!-- Sidebar Filters -->
+            {
+                !forcedType && (
+                    <div id="filter-container" class="fixed inset-0 z-[100] lg:relative lg:inset-auto hidden lg:block">
+                        <!-- Backdrop -->
+                        <div
+                            class="fixed inset-0 bg-black/60 backdrop-blur-sm lg:hidden hidden"
+                            id="filter-backdrop"
+                        />
+                        <!-- Drawer Content -->
+                        <div
+                            class="fixed right-0 top-0 h-full w-[85%] max-w-sm bg-white shadow-2xl z-10 overflow-y-auto transform translate-x-full transition-transform duration-300 lg:relative lg:translate-x-0 lg:h-auto lg:w-full lg:bg-transparent lg:shadow-none lg:z-auto lg:overflow-visible flex flex-col"
+                            id="filter-drawer"
+                        >
+                            <!-- Mobile Drawer Header -->
+                            <div class="flex justify-between items-center p-6 border-b border-gray-100 lg:hidden bg-white sticky top-0 z-20">
+                                <h3 class="text-xl font-bold text-primary">Filters</h3>
+                                <button
+                                    id="filter-close-btn"
+                                    class="p-2 bg-gray-50 rounded-full text-gray-400 hover:text-primary transition-colors"
+                                    aria-label="Close filters"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Filter Content Padding -->
+                            <div class="p-6 lg:p-0">
+                                <ListingsFilter
+                                    searchQuery={searchQuery}
+                                    types={types}
+                                    typeParam={typeParam}
+                                    priceRanges={priceRanges}
+                                    priceRangeParam={priceRangeParam}
+                                    bedsOptions={bedsOptions}
+                                    bedsParam={bedsParam}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                )
+            }
+
+            {
+                forcedType && (
+                    <div class="lg:w-1/4">
+                        <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm sticky top-28">
+                            <h2 class="text-xl font-bold mb-6 italic">
+                                Category:{" "}
+                                <span class="text-accent">{forcedType}s</span>
+                            </h2>
+                            <ul class="space-y-4">
+                                <li>
+                                    <a
+                                        href="/houses"
+                                        class={`flex items-center space-x-2 font-medium transition-colors ${forcedType === "House" ? "text-accent" : "text-gray-500 hover:text-accent"}`}
+                                    >
+                                        <span>🏠</span> <span>Houses</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/units"
+                                        class={`flex items-center space-x-2 font-medium transition-colors ${forcedType === "Unit" ? "text-accent" : "text-gray-500 hover:text-accent"}`}
+                                    >
+                                        <span>🏢</span> <span>Units</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/townhouses"
+                                        class={`flex items-center space-x-2 font-medium transition-colors ${forcedType === "Townhouse" ? "text-accent" : "text-gray-500 hover:text-accent"}`}
+                                    >
+                                        <span>🏡</span> <span>Townhouses</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/lands"
+                                        class={`flex items-center space-x-2 font-medium transition-colors ${forcedType === "Land" ? "text-accent" : "text-gray-500 hover:text-accent"}`}
+                                    >
+                                        <span>🌳</span> <span>Lands</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr class="my-6 border-gray-100" />
+                            <a
+                                href="/listings"
+                                class="text-sm font-bold text-primary hover:text-accent flex items-center"
+                            >
+                                View All Types
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-4 w-4 ml-1"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                )
+            }
+
+            <!-- Listings Grid -->
+            <div class="lg:w-3/4">
+                <!-- Controls -->
+                <div
+                    class="flex flex-col sm:flex-row justify-between items-center mb-8 bg-white p-4 rounded-2xl border border-gray-100 shadow-sm"
+                >
+                    <div class="text-sm text-gray-500 mb-4 sm:mb-0">
+                        Showing <span class="font-bold text-primary">
+                            {filteredProperties.length === 0 ? 0 : startIdx + 1} -
+                            {
+                                Math.min(
+                                    startIdx + ITEMS_PER_PAGE,
+                                    filteredProperties.length,
+                                )
+                            }
+                        </span> of {filteredProperties.length} results
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sm text-gray-500">Sort by:</span>
+                        <select
+                            id="sort-select"
+                            class="text-sm font-bold bg-transparent focus:outline-none cursor-pointer text-primary"
+                        >
+                            <option
+                                value="Newest"
+                                selected={sortParam === "Newest"}>Newest</option
+                            >
+                            <option
+                                value="Price: Low to High"
+                                selected={sortParam === "Price: Low to High"}
+                                >Price: Low to High</option
+                            >
+                            <option
+                                value="Price: High to Low"
+                                selected={sortParam === "Price: High to Low"}
+                                >Price: High to Low</option
+                            >
+                            <option
+                                value="Beds: Most"
+                                selected={sortParam === "Beds: Most"}
+                                >Beds: Most</option
+                            >
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Properties -->
+                {
+                    paginatedProperties.length > 0 ? (
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                            {paginatedProperties.map((property) => (
+                                <PropertyCard {...property} />
+                            ))}
+                        </div>
+                    ) : (
+                        <div class="bg-white rounded-3xl p-12 text-center border border-gray-100 shadow-sm mb-12">
+                            <div class="bg-gray-50 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-gray-300">
+                                <Search size={40} />
+                            </div>
+                            <h3 class="text-2xl font-bold text-primary mb-2">
+                                No properties found
+                            </h3>
+                            <p class="text-gray-500 mb-8">
+                                Try adjusting your filters or search terms to
+                                find what you're looking for.
+                            </p>
+                            <a
+                                href="/listings"
+                                class="inline-flex px-8 py-3 bg-accent text-secondary font-bold rounded-xl hover:bg-accent/90 transition-all"
+                            >
+                                Clear All Filters
+                            </a>
+                        </div>
+                    )
+                }
+
+                <!-- Pagination -->
+                {
+                    totalPages > 1 && (
+                        <Pagination
+                            currentPage={currentPage}
+                            totalPages={totalPages}
+                            baseUrl={baseUrl}
+                        />
+                    )
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<script is:inline>
+    // Robust element selector and logging
+    function initFilters() {
+        console.log("Initializing filters...");
+        const filterBtn = document.getElementById("filter-toggle-btn");
+        const filterCloseBtn = document.getElementById("filter-close-btn");
+        const filterContainer = document.getElementById("filter-container");
+        const filterDrawer = document.getElementById("filter-drawer");
+        const filterBackdrop = document.getElementById("filter-backdrop");
+        const sortSelect = document.getElementById("sort-select");
+
+        console.log("Elements found:", {
+            filterBtn: !!filterBtn,
+            filterContainer: !!filterContainer,
+            filterDrawer: !!filterDrawer,
+            sortSelect: !!sortSelect,
+        });
+
+        if (sortSelect) {
+            sortSelect.addEventListener("change", (e) => {
+                const target = e.target;
+                const url = new URL(window.location.href);
+                url.searchParams.set("sort", target.value);
+                url.searchParams.set("page", "1");
+                window.location.href = url.toString();
+            });
+        }
+
+        function toggleFilters(show) {
+            console.log("Toggling filters:", show);
+            if (show) {
+                // Show container first
+                if (filterContainer) {
+                    filterContainer.classList.remove("hidden");
+                }
+                
+                // Then animate children
+                setTimeout(() => {
+                    if (filterDrawer) filterDrawer.classList.remove("translate-x-full");
+                    if (filterBackdrop) {
+                        filterBackdrop.classList.remove("hidden");
+                        filterBackdrop.classList.add("block");
+                    }
+                }, 10);
+                
+                // Prevent body scroll
+                document.body.style.overflow = "hidden";
+                document.documentElement.style.overflow = "hidden"; // More robust for some browsers
+            } else {
+                // Animate out children first
+                if (filterDrawer) filterDrawer.classList.add("translate-x-full");
+                if (filterBackdrop) {
+                    filterBackdrop.classList.add("hidden");
+                    filterBackdrop.classList.remove("block");
+                }
+                
+                // Wait for animation, then hide container
+                setTimeout(() => {
+                    if (filterContainer) {
+                        filterContainer.classList.add("hidden");
+                    }
+                }, 300);
+                
+                // Re-enable body scroll
+                document.body.style.overflow = "";
+                document.documentElement.style.overflow = "";
+            }
+        }
+
+        if (filterBtn) {
+            filterBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                toggleFilters(true);
+            });
+        }
+
+        if (filterCloseBtn) {
+            filterCloseBtn.addEventListener("click", () =>
+                toggleFilters(false),
+            );
+        }
+
+        if (filterBackdrop) {
+            filterBackdrop.addEventListener("click", () =>
+                toggleFilters(false),
+            );
+        }
+    }
+
+    // Run on first load
+    initFilters();
+
+    // Re-run on View Transitions (if they are ever added)
+    document.addEventListener("astro:page-load", initFilters);
+</script>

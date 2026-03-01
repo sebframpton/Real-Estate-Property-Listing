@@ -1,0 +1,426 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Sell Your Property | Step-by-Step Guide"
+    description="Learn how we sell your house with our expert real estate team. A step-by-step guide to achieving the best results."
+>
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 text-left">
+                    <span
+                        class="inline-block bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-widest mb-6 border border-accent/20"
+                        >Sale Specialists</span
+                    >
+                    <h1
+                        class="text-5xl md:text-7xl font-bold text-primary mb-8 font-display italic leading-tight"
+                    >
+                        We don't just sell. We <span
+                            class="text-accent underline decoration-primary/10"
+                            >Showcase.</span
+                        >
+                    </h1>
+                    <p
+                        class="text-xl text-gray-500 mb-10 leading-relaxed max-w-xl"
+                    >
+                        Selling your home is a major life transition. Our expert
+                        team ensures every detail is handled with precision to
+                        maximize your property's value.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a
+                            href="#register"
+                            class="bg-primary text-white px-10 py-5 rounded-2xl font-bold hover:bg-accent hover:text-secondary transition-all transform hover:scale-105 shadow-xl shadow-primary/10 text-center"
+                        >
+                            Start Selling
+                        </a>
+                        <a
+                            href="#guide"
+                            class="bg-gray-50 text-primary px-10 py-5 rounded-2xl font-bold hover:bg-gray-100 transition-all text-center"
+                        >
+                            View the Guide
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div
+                        class="relative rounded-[60px] overflow-hidden shadow-2xl transform rotate-2"
+                    >
+                        <img
+                            src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                            alt="Luxury Modern Home Interior"
+                            class="w-full aspect-[4/5] object-cover"
+                        />
+                    </div>
+                    <!-- Stats Floating Card -->
+                    <div
+                        class="absolute -bottom-10 -left-10 bg-white p-8 rounded-3xl shadow-2xl border border-gray-100 hidden md:block animate-bounce-slow"
+                    >
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div
+                                class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><path d="m22 7-8.5 8.5-5-5L2 18"
+                                    ></path><path d="M16 7h6v6"></path></svg
+                                >
+                            </div>
+                            <div>
+                                <p class="text-3xl font-bold text-primary">
+                                    15%
+                                </p>
+                                <p class="text-sm text-gray-400 font-medium">
+                                    Above Market Avg
+                                </p>
+                            </div>
+                        </div>
+                        <p
+                            class="text-xs text-gray-400 font-bold uppercase tracking-widest text-center"
+                        >
+                            Sales Performance
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step-by-Step Guide Section -->
+    <section id="guide" class="py-32 bg-background-base">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-24">
+                <h2
+                    class="text-4xl md:text-6xl font-bold text-primary mb-6 font-display italic"
+                >
+                    How We Sell Your <span class="text-accent">Property</span>
+                </h2>
+                <div class="w-24 h-1.5 bg-accent mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div
+                    class="group relative bg-white p-10 rounded-[40px] shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100"
+                >
+                    <div
+                        class="absolute -top-8 left-10 w-16 h-16 bg-primary text-accent text-3xl font-bold flex items-center justify-center rounded-2xl transform -rotate-6 group-hover:rotate-0 transition-transform shadow-xl"
+                    >
+                        01
+                    </div>
+                    <div class="pt-6">
+                        <h3 class="text-2xl font-bold text-primary mb-4 italic">
+                            Strategic Valuation
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed">
+                            We use advanced data analytics and hyper-local
+                            market insight to determine the optimal price for
+                            your home.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div
+                    class="group relative bg-white p-10 rounded-[40px] shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100"
+                >
+                    <div
+                        class="absolute -top-8 left-10 w-16 h-16 bg-accent text-primary text-3xl font-bold flex items-center justify-center rounded-2xl transform rotate-6 group-hover:rotate-0 transition-transform shadow-xl"
+                    >
+                        02
+                    </div>
+                    <div class="pt-6">
+                        <h3 class="text-2xl font-bold text-primary mb-4 italic">
+                            Premium Staging
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed">
+                            Our design team transforms your space into a
+                            high-end experience that resonates with motivated
+                            buyers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div
+                    class="group relative bg-white p-10 rounded-[40px] shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100"
+                >
+                    <div
+                        class="absolute -top-8 left-10 w-16 h-16 bg-primary text-accent text-3xl font-bold flex items-center justify-center rounded-2xl transform -rotate-3 group-hover:rotate-0 transition-transform shadow-xl"
+                    >
+                        03
+                    </div>
+                    <div class="pt-6">
+                        <h3 class="text-2xl font-bold text-primary mb-4 italic">
+                            Global Marketing
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed">
+                            We syndicate your listing to top-tier portals and
+                            run targeted ads to reach potential buyers
+                            worldwide.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div
+                    class="group relative bg-white p-10 rounded-[40px] shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100"
+                >
+                    <div
+                        class="absolute -top-8 left-10 w-16 h-16 bg-accent text-primary text-3xl font-bold flex items-center justify-center rounded-2xl transform rotate-3 group-hover:rotate-0 transition-transform shadow-xl"
+                    >
+                        04
+                    </div>
+                    <div class="pt-6">
+                        <h3 class="text-2xl font-bold text-primary mb-4 italic">
+                            expert Negotiation
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed">
+                            Our elite agents work tirelessly to secure the
+                            highest possible price and most favorable terms for
+                            you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section id="register" class="py-32 bg-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <div
+            class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 translate-x-1/2"
+        >
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div
+                class="max-w-5xl mx-auto flex flex-col lg:flex-row bg-white rounded-[60px] overflow-hidden shadow-2xl border border-gray-100"
+            >
+                <!-- Left: Info -->
+                <div
+                    class="lg:w-2/5 bg-primary p-12 lg:p-16 text-white flex flex-col justify-center"
+                >
+                    <h2 class="text-white font-bold mb-6 font-display italic">
+                        Let's <span class="text-accent underline"
+                            >Get Started</span
+                        >
+                    </h2>
+                    <p class="text-gray-300 mb-12 text-lg">
+                        Fill out the form to register your interest. One of our
+                        senior specialists will be in touch within 24 hours.
+                    </p>
+                    <div class="space-y-8">
+                        <div class="flex items-center space-x-4 group">
+                            <div
+                                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-secondary transition-all"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                                    ></path></svg
+                                >
+                            </div>
+                            <span class="text-lg font-bold">1300 LISTED</span>
+                        </div>
+                        <div class="flex items-center space-x-4 group">
+                            <div
+                                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-secondary transition-all"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><rect
+                                        width="20"
+                                        height="16"
+                                        x="2"
+                                        y="4"
+                                        rx="2"></rect><path
+                                        d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+                                    ></path></svg
+                                >
+                            </div>
+                            <span class="text-lg font-bold"
+                                >sell@listedhomes.com</span
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="lg:w-3/5 p-12 lg:p-16">
+                    <form class="space-y-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-2">
+                                <label
+                                    class="text-xs font-bold text-gray-400 uppercase tracking-widest"
+                                    >Full Name</label
+                                >
+                                <input
+                                    type="text"
+                                    placeholder="John Doe"
+                                    class="w-full bg-gray-50 border border-gray-100 rounded-2xl px-6 py-4 outline-none focus:ring-2 focus:ring-accent transition-all"
+                                />
+                            </div>
+                            <div class="space-y-2">
+                                <label
+                                    class="text-xs font-bold text-gray-400 uppercase tracking-widest"
+                                    >Phone Number</label
+                                >
+                                <input
+                                    type="tel"
+                                    placeholder="+61 400 000 000"
+                                    class="w-full bg-gray-50 border border-gray-100 rounded-2xl px-6 py-4 outline-none focus:ring-2 focus:ring-accent transition-all"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label
+                                class="text-xs font-bold text-gray-400 uppercase tracking-widest"
+                                >Property Address</label
+                            >
+                            <input
+                                type="text"
+                                placeholder="123 Ocean View Drive, Gold Coast"
+                                class="w-full bg-gray-50 border border-gray-100 rounded-2xl px-6 py-4 outline-none focus:ring-2 focus:ring-accent transition-all"
+                            />
+                        </div>
+
+                        <div class="space-y-2">
+                            <label
+                                class="text-xs font-bold text-gray-400 uppercase tracking-widest"
+                                >Property Type</label
+                            >
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                                <label class="relative cursor-pointer group">
+                                    <input
+                                        type="radio"
+                                        name="type"
+                                        class="peer sr-only"
+                                        checked
+                                    />
+                                    <div
+                                        class="p-4 rounded-xl border-2 border-gray-100 text-center peer-checked:border-accent peer-checked:bg-accent/5 group-hover:bg-gray-50 transition-all"
+                                    >
+                                        <span
+                                            class="text-xs font-bold text-primary uppercase"
+                                            >House</span
+                                        >
+                                    </div>
+                                </label>
+                                <label class="relative cursor-pointer group">
+                                    <input
+                                        type="radio"
+                                        name="type"
+                                        class="peer sr-only"
+                                    />
+                                    <div
+                                        class="p-4 rounded-xl border-2 border-gray-100 text-center peer-checked:border-accent peer-checked:bg-accent/5 group-hover:bg-gray-50 transition-all"
+                                    >
+                                        <span
+                                            class="text-xs font-bold text-primary uppercase"
+                                            >Unit</span
+                                        >
+                                    </div>
+                                </label>
+                                <label class="relative cursor-pointer group">
+                                    <input
+                                        type="radio"
+                                        name="type"
+                                        class="peer sr-only"
+                                    />
+                                    <div
+                                        class="p-4 rounded-xl border-2 border-gray-100 text-center peer-checked:border-accent peer-checked:bg-accent/5 group-hover:bg-gray-50 transition-all"
+                                    >
+                                        <span
+                                            class="text-xs font-bold text-primary uppercase"
+                                            >Condo</span
+                                        >
+                                    </div>
+                                </label>
+                                <label class="relative cursor-pointer group">
+                                    <input
+                                        type="radio"
+                                        name="type"
+                                        class="peer sr-only"
+                                    />
+                                    <div
+                                        class="p-4 rounded-xl border-2 border-gray-100 text-center peer-checked:border-accent peer-checked:bg-accent/5 group-hover:bg-gray-50 transition-all"
+                                    >
+                                        <span
+                                            class="text-xs font-bold text-primary uppercase"
+                                            >Land</span
+                                        >
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label
+                                class="text-xs font-bold text-gray-400 uppercase tracking-widest"
+                                >Anything else we should know?</label
+                            >
+                            <textarea
+                                rows="4"
+                                placeholder="Tell us about your home..."
+                                class="w-full bg-gray-50 border border-gray-100 rounded-2xl px-6 py-4 outline-none focus:ring-2 focus:ring-accent transition-all resize-none"
+                            ></textarea>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="w-full bg-accent text-secondary font-bold py-5 rounded-2xl hover:bg-accent/90 transition-all transform hover:scale-[1.02] shadow-xl shadow-accent/20"
+                        >
+                            Submit Registration
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @keyframes bounce-slow {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+        .animate-bounce-slow {
+            animation: bounce-slow 4s ease-in-out infinite;
+        }
+    </style>
+</Layout>

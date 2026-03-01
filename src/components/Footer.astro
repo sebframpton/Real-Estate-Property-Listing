@@ -1,0 +1,171 @@
+---
+import {
+    Home,
+    Facebook,
+    Instagram,
+    Twitter,
+    Mail,
+    Phone,
+    MapPin,
+} from "lucide-astro";
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-secondary text-white pt-20 pb-10">
+    <div class="container mx-auto px-4">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"
+        >
+            <!-- Brand -->
+            <div class="space-y-6">
+                <a href="/" class="flex items-center space-x-2">
+                    <div class="bg-primary text-accent p-1.5 rounded-lg">
+                        <Home size={24} />
+                    </div>
+                    <span
+                        class="text-2xl font-display font-bold text-white tracking-tight"
+                    >
+                        Listed<span
+                            class="text-accent underline decoration-2 underline-offset-4 font-bold"
+                            >Homes</span
+                        >
+                    </span>
+                </a>
+                <p class="text-gray-400 leading-relaxed">
+                    Elevating your real estate experience with premium service
+                    and exceptional properties. Your dream home is just one
+                    click away.
+                </p>
+                <div class="flex space-x-4">
+                    <a
+                        href="#"
+                        class="p-2 bg-gray-800 hover:bg-accent hover:text-secondary rounded-full transition-all"
+                    >
+                        <Facebook size={18} />
+                    </a>
+                    <a
+                        href="#"
+                        class="p-2 bg-gray-800 hover:bg-accent hover:text-secondary rounded-full transition-all"
+                    >
+                        <Instagram size={18} />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-lg font-bold mb-6 font-display text-accent">
+                    Quick Links
+                </h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li>
+                        <a
+                            href="/listings"
+                            class="hover:text-white transition-colors"
+                            >Our Listings</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="/property-management"
+                            class="hover:text-white transition-colors"
+                            >Property Management</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="/investment-portfolios"
+                            class="hover:text-white transition-colors"
+                            >Investment Portfolios</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="/recent-sales"
+                            class="hover:text-white transition-colors"
+                            >Recent Sales</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="/testimonials"
+                            class="hover:text-white transition-colors"
+                            >Client Testimonials</a
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-lg font-bold mb-6 font-display text-accent">
+                    Contact Us
+                </h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex items-start space-x-3">
+                        <MapPin size={20} class="text-accent shrink-0" />
+                        <span
+                            >123 Luxury Lane, Gold Coast, QLD 4217, Australia</span
+                        >
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <Phone size={20} class="text-accent shrink-0" />
+                        <a
+                            href="tel:+61755551234"
+                            class="hover:text-white transition-colors"
+                            >+61 7 5555 1234</a
+                        >
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <Mail size={20} class="text-accent shrink-0" />
+                        <a
+                            href="mailto:hello@listedhomes.com"
+                            class="hover:text-white transition-colors"
+                            >hello@listedhomes.com</a
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div>
+                <h4 class="text-lg font-bold mb-6 font-display text-accent">
+                    Newsletter
+                </h4>
+                <p class="text-gray-400 mb-6">
+                    Stay updated with the latest luxury properties and market
+                    insights.
+                </p>
+                <form
+                    action="https://formspree.io/f/placeholder"
+                    method="POST"
+                    class="space-y-3"
+                >
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                        class="w-full bg-gray-800 border-none rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-accent outline-none"
+                        required
+                    />
+                    <button
+                        type="submit"
+                        class="w-full bg-accent text-secondary font-bold py-3 rounded-lg hover:bg-accent/90 transition-colors"
+                    >
+                        Subscribe Now
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div
+            class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm"
+        >
+            <p>&copy; {currentYear} ListedHomes. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="/privacy" class="hover:text-white">Privacy Policy</a>
+                <a href="/terms" class="hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>

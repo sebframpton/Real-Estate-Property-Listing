@@ -1,0 +1,46 @@
+---
+export interface Props {
+    count: number;
+    title?: string;
+}
+
+const { count, title = "Find Your Perfect Residence" } = Astro.props;
+---
+
+<div class="relative bg-primary text-white py-20 md:py-32 overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+        <img
+            src="/images/House/Australian_home_08a8390313.jpeg"
+            alt="Real Estate background"
+            class="w-full h-full object-cover opacity-20"
+        />
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"
+        >
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 text-center md:text-left relative z-10">
+        <h1
+            class="text-4xl md:text-6xl font-bold font-display mb-4 italic text-white tracking-tight"
+        >
+            {
+                title.includes("Residence") ? (
+                    <>
+                        Find Your Perfect{" "}
+                        <span class="text-white underline decoration-accent decoration-2 underline-offset-8">
+                            Residence
+                        </span>
+                    </>
+                ) : (
+                    title
+                )
+            }
+        </h1>
+        <p class="text-gray-300 text-lg max-w-2xl">
+            Discover {count} luxury properties meticulously curated for your discerning
+            lifestyle.
+        </p>
+    </div>
+</div>

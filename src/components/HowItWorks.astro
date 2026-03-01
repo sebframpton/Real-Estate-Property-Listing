@@ -1,0 +1,45 @@
+---
+import { Search, ShieldCheck, Key } from "lucide-astro";
+
+const howItWorks = [
+    {
+        title: "Search Property",
+        desc: "Browse our extensive list of premium properties across the country.",
+        icon: Search,
+    },
+    {
+        title: "Expert Guidance",
+        desc: "Our top-rated agents provide personalized support for every step.",
+        icon: ShieldCheck,
+    },
+    {
+        title: "Take the Key",
+        desc: "Finalize the deal and step into your new dream home effortlessly.",
+        icon: Key,
+    },
+];
+---
+
+<section class="py-24 bg-white border-y border-gray-100">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold mb-16">
+            How It <span class="text-accent">Works</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {
+                howItWorks.map((step, index) => (
+                    <div class="relative px-6">
+                        <div class="w-20 h-20 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-8 text-accent">
+                            <step.icon size={36} />
+                        </div>
+                        {index < 2 && (
+                            <div class="hidden lg:block absolute top-10 -right-4 w-8 h-px bg-gray-200" />
+                        )}
+                        <h3 class="text-2xl font-bold mb-4">{step.title}</h3>
+                        <p class="text-gray-500 leading-relaxed">{step.desc}</p>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>

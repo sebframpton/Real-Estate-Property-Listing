@@ -1,0 +1,1193 @@
+[
+  {
+    "id": "1",
+    "title": "Beautiful House in Brisbane",
+    "price": 3947264,
+    "location": "Brisbane, QLD",
+    "status": "sale",
+    "coordinates": [
+      -27.456237810641362,
+      152.99005849600417
+    ],
+    "type": "House",
+    "beds": 1,
+    "baths": 3,
+    "parking": 1,
+    "area": 87,
+    "image": "/images/House/Australian_home_08a8390313.jpeg",
+    "gallery": [
+      "/images/House/Australian_home_08a8390313.jpeg",
+      "/images/House/Australian_home_inside_bedroom_8ed6744dd0.jpeg",
+      "/images/House/Australian_suburb_home_interior_46303f0bd0.jpeg"
+    ],
+    "featured": true,
+    "description": "A stunning house located in the heart of Brisbane, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Close to Schools",
+      "Ocean View",
+      "Pool",
+      "Wine Cellar"
+    ],
+    "agent": {
+      "name": "Sarah Jenkins",
+      "phone": "+61 400 123 456",
+      "email": "sarah@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Sarah%20Jenkins&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "2",
+    "title": "Beautiful House in Perth",
+    "price": 2334834,
+    "location": "Perth, WA",
+    "status": "sale",
+    "coordinates": [
+      -31.988741809831936,
+      115.87451352277414
+    ],
+    "type": "House",
+    "beds": 3,
+    "baths": 1,
+    "parking": 3,
+    "area": 158,
+    "image": "/images/House/Australian_house_c7dc40d564.jpeg",
+    "gallery": [
+      "/images/House/Australian_house_c7dc40d564.jpeg",
+      "/images/House/Australian_home_inside_5215a5057a.jpeg",
+      "/images/House/Australian_home_inside_bedroom_6ca7cbdc62.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning house located in the heart of Perth, WA. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Balcony",
+      "Pool",
+      "Smart Home System",
+      "Ocean View",
+      "Garden"
+    ],
+    "agent": {
+      "name": "Emma Thompson",
+      "phone": "+61 422 333 444",
+      "email": "emma@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Emma%20Thompson&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "3",
+    "title": "Beautiful House in Brisbane",
+    "price": 1748471,
+    "location": "Brisbane, QLD",
+    "status": "sale",
+    "coordinates": [
+      -27.517386715800388,
+      153.0451894026301
+    ],
+    "type": "House",
+    "beds": 3,
+    "baths": 1,
+    "parking": 3,
+    "area": 482,
+    "image": "/images/House/Australian_house_83309d879c.jpeg",
+    "gallery": [
+      "/images/House/Australian_house_83309d879c.jpeg",
+      "/images/House/Australian_suburb_home_bathroom_7e24f920a8.jpeg",
+      "/images/House/Australian_suburb_home_kitchen_48c50dc2e0.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning house located in the heart of Brisbane, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Wine Cellar",
+      "Smart Home System",
+      "Built-in Wardrobes"
+    ],
+    "agent": {
+      "name": "Michael Chen",
+      "phone": "+61 411 987 654",
+      "email": "michael@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Michael%20Chen&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "4",
+    "title": "Beautiful House in Melbourne",
+    "price": 3753932,
+    "location": "Melbourne, VIC",
+    "status": "sale",
+    "coordinates": [
+      -37.859088034706666,
+      144.9491343393864
+    ],
+    "type": "House",
+    "beds": 5,
+    "baths": 2,
+    "parking": 2,
+    "area": 247,
+    "image": "/images/House/Australian_home_bc7784c2cd.jpeg",
+    "gallery": [
+      "/images/House/Australian_home_bc7784c2cd.jpeg",
+      "/images/House/Australian_home_inside_22f3015181.jpeg",
+      "/images/House/Australian_home_inside_kitchen_3b13a6df09.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning house located in the heart of Melbourne, VIC. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Built-in Wardrobes",
+      "Close to Schools",
+      "Gym",
+      "Pool"
+    ],
+    "agent": {
+      "name": "Sarah Jenkins",
+      "phone": "+61 400 123 456",
+      "email": "sarah@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Sarah%20Jenkins&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "5",
+    "title": "Beautiful House in Gold Coast",
+    "price": 1781,
+    "location": "Gold Coast, QLD",
+    "status": "rent",
+    "coordinates": [
+      -27.991742542367096,
+      153.42601533481866
+    ],
+    "type": "House",
+    "beds": 5,
+    "baths": 1,
+    "parking": 2,
+    "area": 476,
+    "image": "/images/House/Australian_suburb_home_65f6b2cbe4.jpeg",
+    "gallery": [
+      "/images/House/Australian_suburb_home_65f6b2cbe4.jpeg",
+      "/images/House/Australian_suburb_home_inside_3b2fad2222.jpeg",
+      "/images/House/Australian_suburb_home_kitchen_fda39494a0.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning house located in the heart of Gold Coast, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Garden",
+      "Pool",
+      "Smart Home System",
+      "Gym",
+      "Close to Schools"
+    ],
+    "agent": {
+      "name": "Sarah Jenkins",
+      "phone": "+61 400 123 456",
+      "email": "sarah@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Sarah%20Jenkins&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "6",
+    "title": "Beautiful House in Melbourne",
+    "price": 4817192,
+    "location": "Melbourne, VIC",
+    "status": "sale",
+    "coordinates": [
+      -37.82837475783129,
+      144.94011938678784
+    ],
+    "type": "House",
+    "beds": 2,
+    "baths": 1,
+    "parking": 4,
+    "area": 362,
+    "image": "/images/House/Australian_house_c7dc40d564.jpeg",
+    "gallery": [
+      "/images/House/Australian_house_c7dc40d564.jpeg",
+      "/images/House/Australian_suburb_home_interior_46303f0bd0.jpeg",
+      "/images/House/Australian_suburb_home_inside_3c5401204f.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning house located in the heart of Melbourne, VIC. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Balcony",
+      "Fireplace",
+      "Secure Parking",
+      "Smart Home System"
+    ],
+    "agent": {
+      "name": "Michael Chen",
+      "phone": "+61 411 987 654",
+      "email": "michael@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Michael%20Chen&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "7",
+    "title": "Beautiful House in Gold Coast",
+    "price": 813,
+    "location": "Gold Coast, QLD",
+    "status": "rent",
+    "coordinates": [
+      -28.000808626029293,
+      153.4299699330998
+    ],
+    "type": "House",
+    "beds": 2,
+    "baths": 2,
+    "parking": 1,
+    "area": 240,
+    "image": "/images/House/Australian_suburb_home_dfd06c8893.jpeg",
+    "gallery": [
+      "/images/House/Australian_suburb_home_dfd06c8893.jpeg",
+      "/images/House/Australian_suburb_home_kitchen_e89cb8549e.jpeg",
+      "/images/House/Australian_suburb_home_bathroom_4befd5caba.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning house located in the heart of Gold Coast, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Balcony",
+      "Air Conditioning",
+      "Gym",
+      "Close to Schools",
+      "Ocean View"
+    ],
+    "agent": {
+      "name": "Sarah Jenkins",
+      "phone": "+61 400 123 456",
+      "email": "sarah@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Sarah%20Jenkins&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "8",
+    "title": "Beautiful House in Perth",
+    "price": 4096651,
+    "location": "Perth, WA",
+    "status": "sale",
+    "coordinates": [
+      -31.93739261143877,
+      115.85915487255845
+    ],
+    "type": "House",
+    "beds": 2,
+    "baths": 4,
+    "parking": 0,
+    "area": 172,
+    "image": "/images/House/Australian_home_7e2f63f7ed.jpeg",
+    "gallery": [
+      "/images/House/Australian_home_7e2f63f7ed.jpeg",
+      "/images/House/Australian_home_inside_bathroom_6b4aaedacf.jpeg",
+      "/images/House/Australian_home_inside_d84aac3933.jpeg"
+    ],
+    "featured": true,
+    "description": "A stunning house located in the heart of Perth, WA. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Tennis Court",
+      "Gym",
+      "Close to Schools",
+      "Smart Home System"
+    ],
+    "agent": {
+      "name": "Sarah Jenkins",
+      "phone": "+61 400 123 456",
+      "email": "sarah@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Sarah%20Jenkins&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "9",
+    "title": "Beautiful House in Melbourne",
+    "price": 4193104,
+    "location": "Melbourne, VIC",
+    "status": "sale",
+    "coordinates": [
+      -37.81896468784466,
+      144.92298965182837
+    ],
+    "type": "House",
+    "beds": 4,
+    "baths": 2,
+    "parking": 1,
+    "area": 288,
+    "image": "/images/House/Australian_home_da58b26d8a.jpeg",
+    "gallery": [
+      "/images/House/Australian_home_da58b26d8a.jpeg",
+      "/images/House/Australian_home_inside_bathroom_1bea4f33ba.jpeg",
+      "/images/House/Australian_home_inside_458786994c.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning house located in the heart of Melbourne, VIC. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Wine Cellar",
+      "Pool",
+      "Gym",
+      "Close to Schools"
+    ],
+    "agent": {
+      "name": "Sarah Jenkins",
+      "phone": "+61 400 123 456",
+      "email": "sarah@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Sarah%20Jenkins&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "10",
+    "title": "Beautiful House in Gold Coast",
+    "price": 4976875,
+    "location": "Gold Coast, QLD",
+    "status": "sale",
+    "coordinates": [
+      -28.002661522932804,
+      153.42453497078404
+    ],
+    "type": "House",
+    "beds": 1,
+    "baths": 2,
+    "parking": 0,
+    "area": 458,
+    "image": "/images/House/Australian_suburb_home_aff884f1ac.jpeg",
+    "gallery": [
+      "/images/House/Australian_suburb_home_aff884f1ac.jpeg",
+      "/images/House/Australian_suburb_home_interior_46303f0bd0.jpeg",
+      "/images/House/Australian_home_inside_bathroom_1bea4f33ba.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning house located in the heart of Gold Coast, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Pool",
+      "Close to Schools",
+      "Tennis Court",
+      "Air Conditioning",
+      "Smart Home System",
+      "Secure Parking"
+    ],
+    "agent": {
+      "name": "Michael Chen",
+      "phone": "+61 411 987 654",
+      "email": "michael@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Michael%20Chen&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "11",
+    "title": "Beautiful House in Adelaide",
+    "price": 2676038,
+    "location": "Adelaide, SA",
+    "status": "sale",
+    "coordinates": [
+      -34.910487234519046,
+      138.617830078453
+    ],
+    "type": "House",
+    "beds": 6,
+    "baths": 1,
+    "parking": 1,
+    "area": 352,
+    "image": "/images/House/Australian_suburb_home_596e08390c.jpeg",
+    "gallery": [
+      "/images/House/Australian_suburb_home_596e08390c.jpeg",
+      "/images/House/Australian_home_inside_bedroom_2b31ebca22.jpeg",
+      "/images/House/Australian_suburb_home_bathroom_4befd5caba.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning house located in the heart of Adelaide, SA. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Fireplace",
+      "Pool",
+      "Wine Cellar"
+    ],
+    "agent": {
+      "name": "Sarah Jenkins",
+      "phone": "+61 400 123 456",
+      "email": "sarah@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Sarah%20Jenkins&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "12",
+    "title": "Beautiful House in Sydney",
+    "price": 4327111,
+    "location": "Sydney, NSW",
+    "status": "sale",
+    "coordinates": [
+      -33.84655718257113,
+      151.2200180890795
+    ],
+    "type": "House",
+    "beds": 3,
+    "baths": 3,
+    "parking": 0,
+    "area": 183,
+    "image": "/images/House/Australian_home_a6669b5fb4.jpeg",
+    "gallery": [
+      "/images/House/Australian_home_a6669b5fb4.jpeg",
+      "/images/House/Australian_home_inside_bedroom_aea139dc8e.jpeg",
+      "/images/House/Australian_suburb_home_bathroom_d36247b298.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning house located in the heart of Sydney, NSW. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Pool",
+      "Gym",
+      "Garden",
+      "Wine Cellar"
+    ],
+    "agent": {
+      "name": "Michael Chen",
+      "phone": "+61 411 987 654",
+      "email": "michael@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Michael%20Chen&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "13",
+    "title": "Beautiful House in Gold Coast",
+    "price": 3834432,
+    "location": "Gold Coast, QLD",
+    "status": "sale",
+    "coordinates": [
+      -27.979618950360866,
+      153.35209379490834
+    ],
+    "type": "House",
+    "beds": 4,
+    "baths": 2,
+    "parking": 4,
+    "area": 111,
+    "image": "/images/House/Australian_house_ea8df9d78c.jpeg",
+    "gallery": [
+      "/images/House/Australian_house_ea8df9d78c.jpeg",
+      "/images/House/Australian_home_inside_bedroom_6ca7cbdc62.jpeg",
+      "/images/House/Australian_home_inside_bathroom_db2510189c.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning house located in the heart of Gold Coast, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Smart Home System",
+      "Secure Parking",
+      "Fireplace",
+      "Gym",
+      "Air Conditioning"
+    ],
+    "agent": {
+      "name": "Emma Thompson",
+      "phone": "+61 422 333 444",
+      "email": "emma@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Emma%20Thompson&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "14",
+    "title": "Beautiful House in Sydney",
+    "price": 4123123,
+    "location": "Sydney, NSW",
+    "status": "sale",
+    "coordinates": [
+      -33.8644619282937,
+      151.25868575068893
+    ],
+    "type": "House",
+    "beds": 3,
+    "baths": 2,
+    "parking": 4,
+    "area": 457,
+    "image": "/images/House/Australian_home_17c98025bc.jpeg",
+    "gallery": [
+      "/images/House/Australian_home_17c98025bc.jpeg",
+      "/images/House/Australian_suburb_home_inside_4d207d11c6.jpeg",
+      "/images/House/Australian_suburb_home_inside_656fbefa48.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning house located in the heart of Sydney, NSW. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Dishwasher",
+      "Secure Parking",
+      "Tennis Court",
+      "Close to Schools",
+      "Wine Cellar",
+      "Garden"
+    ],
+    "agent": {
+      "name": "Michael Chen",
+      "phone": "+61 411 987 654",
+      "email": "michael@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Michael%20Chen&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "15",
+    "title": "Beautiful House in Brisbane",
+    "price": 2765379,
+    "location": "Brisbane, QLD",
+    "status": "sale",
+    "coordinates": [
+      -27.498258660645888,
+      153.0114164610627
+    ],
+    "type": "House",
+    "beds": 3,
+    "baths": 4,
+    "parking": 0,
+    "area": 180,
+    "image": "/images/House/Australian_home_67e9136334.jpeg",
+    "gallery": [
+      "/images/House/Australian_home_67e9136334.jpeg",
+      "/images/House/Australian_home_inside_458786994c.jpeg",
+      "/images/House/Australian_suburb_home_inside_3b1bf84eee.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning house located in the heart of Brisbane, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Wine Cellar",
+      "Smart Home System",
+      "Pool",
+      "Gym",
+      "Secure Parking"
+    ],
+    "agent": {
+      "name": "Emma Thompson",
+      "phone": "+61 422 333 444",
+      "email": "emma@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Emma%20Thompson&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "16",
+    "title": "Beautiful Unit in Perth",
+    "price": 1205603,
+    "location": "Perth, WA",
+    "status": "sale",
+    "coordinates": [
+      -31.989010188486244,
+      115.87248313387681
+    ],
+    "type": "Unit",
+    "beds": 1,
+    "baths": 4,
+    "parking": 0,
+    "area": 146,
+    "image": "/images/Unit/Australian_home_units_6abbad7b7d.jpeg",
+    "gallery": [
+      "/images/Unit/Australian_home_units_6abbad7b7d.jpeg",
+      "/images/Unit/Australian_unit_bathroom_2af9a5b37a.jpeg",
+      "/images/Unit/Australian_unit_bathroom_5cdca8684b.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning unit located in the heart of Perth, WA. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Gym",
+      "Secure Parking",
+      "Tennis Court",
+      "Built-in Wardrobes"
+    ],
+    "agent": {
+      "name": "Michael Chen",
+      "phone": "+61 411 987 654",
+      "email": "michael@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Michael%20Chen&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "17",
+    "title": "Beautiful Unit in Gold Coast",
+    "price": 544885,
+    "location": "Gold Coast, QLD",
+    "status": "sale",
+    "coordinates": [
+      -27.9979557097826,
+      153.41523088559774
+    ],
+    "type": "Unit",
+    "beds": 6,
+    "baths": 1,
+    "parking": 3,
+    "area": 259,
+    "image": "/images/Unit/Australian_home_unit_bed_9762f91202.jpeg",
+    "gallery": [
+      "/images/Unit/Australian_home_unit_bed_9762f91202.jpeg",
+      "/images/Unit/Australian_home_unit_inside_5b341cd849.jpeg",
+      "/images/Unit/Australian_unit_bathroom_2af9a5b37a.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning unit located in the heart of Gold Coast, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Ocean View",
+      "Built-in Wardrobes",
+      "Balcony",
+      "Fireplace",
+      "Gym"
+    ],
+    "agent": {
+      "name": "Sarah Jenkins",
+      "phone": "+61 400 123 456",
+      "email": "sarah@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Sarah%20Jenkins&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "18",
+    "title": "Beautiful Unit in Brisbane",
+    "price": 1857710,
+    "location": "Brisbane, QLD",
+    "status": "sale",
+    "coordinates": [
+      -27.4997351170914,
+      152.98725602266242
+    ],
+    "type": "Unit",
+    "beds": 3,
+    "baths": 2,
+    "parking": 0,
+    "area": 313,
+    "image": "/images/Unit/Australian_home_unit_105d5c3eb5.jpeg",
+    "gallery": [
+      "/images/Unit/Australian_home_unit_105d5c3eb5.jpeg",
+      "/images/Unit/Australian_home_unit_inside_045842aeb0.jpeg",
+      "/images/Unit/Australian_home_unit_inside_d6bcae8398.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning unit located in the heart of Brisbane, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Built-in Wardrobes",
+      "Pool",
+      "Wine Cellar",
+      "Gym"
+    ],
+    "agent": {
+      "name": "Sarah Jenkins",
+      "phone": "+61 400 123 456",
+      "email": "sarah@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Sarah%20Jenkins&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "19",
+    "title": "Beautiful Unit in Melbourne",
+    "price": 1338210,
+    "location": "Melbourne, VIC",
+    "status": "sale",
+    "coordinates": [
+      -37.829800363155066,
+      144.9734144009425
+    ],
+    "type": "Unit",
+    "beds": 2,
+    "baths": 2,
+    "parking": 3,
+    "area": 499,
+    "image": "/images/Unit/Australian_home_unit_beach_20b0699d0c.jpeg",
+    "gallery": [
+      "/images/Unit/Australian_home_unit_beach_20b0699d0c.jpeg",
+      "/images/Unit/Australian_unit_bathroom_2af9a5b37a.jpeg",
+      "/images/Unit/Australian_home_unit_bedroom_e30a5d8b52.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning unit located in the heart of Melbourne, VIC. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Pool",
+      "Gym",
+      "Balcony",
+      "Smart Home System",
+      "Garden",
+      "Close to Schools"
+    ],
+    "agent": {
+      "name": "Michael Chen",
+      "phone": "+61 411 987 654",
+      "email": "michael@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Michael%20Chen&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "20",
+    "title": "Beautiful Unit in Gold Coast",
+    "price": 2263,
+    "location": "Gold Coast, QLD",
+    "status": "rent",
+    "coordinates": [
+      -28.04564646589231,
+      153.36236074587794
+    ],
+    "type": "Unit",
+    "beds": 1,
+    "baths": 3,
+    "parking": 2,
+    "area": 67,
+    "image": "/images/Unit/Australian_home_unit_beach_b20a4b6af6.jpeg",
+    "gallery": [
+      "/images/Unit/Australian_home_unit_beach_b20a4b6af6.jpeg",
+      "/images/Unit/Australian_unit_bathroom_51ab8681fb.jpeg",
+      "/images/Unit/Australian_unit_bathroom_5cdca8684b.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning unit located in the heart of Gold Coast, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Garden",
+      "Close to Schools",
+      "Wine Cellar",
+      "Pool",
+      "Fireplace"
+    ],
+    "agent": {
+      "name": "Emma Thompson",
+      "phone": "+61 422 333 444",
+      "email": "emma@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Emma%20Thompson&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "21",
+    "title": "Beautiful Unit in Sydney",
+    "price": 508478,
+    "location": "Sydney, NSW",
+    "status": "sale",
+    "coordinates": [
+      -33.89563529907173,
+      151.25386232799812
+    ],
+    "type": "Unit",
+    "beds": 5,
+    "baths": 1,
+    "parking": 1,
+    "area": 372,
+    "image": "/images/Unit/Australian_home_unit_1a075597f8.jpeg",
+    "gallery": [
+      "/images/Unit/Australian_home_unit_1a075597f8.jpeg",
+      "/images/Unit/Australian_home_unit_inside_d6bcae8398.jpeg",
+      "/images/Unit/Australian_unit_bathroom_8629acdd51.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning unit located in the heart of Sydney, NSW. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Close to Schools",
+      "Pool",
+      "Ocean View"
+    ],
+    "agent": {
+      "name": "Emma Thompson",
+      "phone": "+61 422 333 444",
+      "email": "emma@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Emma%20Thompson&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "22",
+    "title": "Beautiful Unit in Melbourne",
+    "price": 1437958,
+    "location": "Melbourne, VIC",
+    "status": "sale",
+    "coordinates": [
+      -37.81942096661872,
+      145.00968671780868
+    ],
+    "type": "Unit",
+    "beds": 2,
+    "baths": 2,
+    "parking": 1,
+    "area": 238,
+    "image": "/images/Unit/Australian_home_unit_b2b3cd8b19.jpeg",
+    "gallery": [
+      "/images/Unit/Australian_home_unit_b2b3cd8b19.jpeg",
+      "/images/Unit/Australian_unit_bathroom_f0a61afefc.jpeg",
+      "/images/Unit/Australian_unit_bathroom_e243167961.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning unit located in the heart of Melbourne, VIC. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Pool",
+      "Wine Cellar",
+      "Garden",
+      "Dishwasher",
+      "Fireplace"
+    ],
+    "agent": {
+      "name": "Michael Chen",
+      "phone": "+61 411 987 654",
+      "email": "michael@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Michael%20Chen&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "23",
+    "title": "Beautiful Unit in Gold Coast",
+    "price": 1152458,
+    "location": "Gold Coast, QLD",
+    "status": "sale",
+    "coordinates": [
+      -27.97505992964542,
+      153.41943810149505
+    ],
+    "type": "Unit",
+    "beds": 5,
+    "baths": 3,
+    "parking": 2,
+    "area": 425,
+    "image": "/images/Unit/Australian_home_unit_694a004868.jpeg",
+    "gallery": [
+      "/images/Unit/Australian_home_unit_694a004868.jpeg",
+      "/images/Unit/Australian_unit_bathroom_e243167961.jpeg",
+      "/images/Unit/Australian_home_unit_bedroom_9d3c05c4be.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning unit located in the heart of Gold Coast, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Built-in Wardrobes",
+      "Pool",
+      "Smart Home System",
+      "Gym"
+    ],
+    "agent": {
+      "name": "Michael Chen",
+      "phone": "+61 411 987 654",
+      "email": "michael@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Michael%20Chen&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "24",
+    "title": "Beautiful Unit in Adelaide",
+    "price": 585452,
+    "location": "Adelaide, SA",
+    "status": "sale",
+    "coordinates": [
+      -34.918304408448726,
+      138.57052471646216
+    ],
+    "type": "Unit",
+    "beds": 4,
+    "baths": 3,
+    "parking": 1,
+    "area": 479,
+    "image": "/images/Unit/Australian_home_unit_a4f2107b0e.jpeg",
+    "gallery": [
+      "/images/Unit/Australian_home_unit_a4f2107b0e.jpeg",
+      "/images/Unit/Australian_unit_bathroom_5cdca8684b.jpeg",
+      "/images/Unit/Australian_unit_bathroom_f0a61afefc.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning unit located in the heart of Adelaide, SA. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Air Conditioning",
+      "Dishwasher",
+      "Balcony"
+    ],
+    "agent": {
+      "name": "Michael Chen",
+      "phone": "+61 411 987 654",
+      "email": "michael@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Michael%20Chen&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "25",
+    "title": "Beautiful Unit in Melbourne",
+    "price": 1628041,
+    "location": "Melbourne, VIC",
+    "status": "sale",
+    "coordinates": [
+      -37.798588462112406,
+      144.9575097082476
+    ],
+    "type": "Unit",
+    "beds": 1,
+    "baths": 3,
+    "parking": 4,
+    "area": 328,
+    "image": "/images/Unit/Australian_home_unit_7104bd9a9d.jpeg",
+    "gallery": [
+      "/images/Unit/Australian_home_unit_7104bd9a9d.jpeg",
+      "/images/Unit/Australian_home_unit_inside_045842aeb0.jpeg",
+      "/images/Unit/Australian_unit_bathroom_e243167961.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning unit located in the heart of Melbourne, VIC. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Close to Schools",
+      "Built-in Wardrobes",
+      "Garden",
+      "Smart Home System",
+      "Dishwasher",
+      "Balcony"
+    ],
+    "agent": {
+      "name": "Michael Chen",
+      "phone": "+61 411 987 654",
+      "email": "michael@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Michael%20Chen&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "26",
+    "title": "Beautiful Townhouse in Gold Coast",
+    "price": 1613923,
+    "location": "Gold Coast, QLD",
+    "status": "sale",
+    "coordinates": [
+      -27.97989294152194,
+      153.37043739820828
+    ],
+    "type": "Townhouse",
+    "beds": 2,
+    "baths": 2,
+    "parking": 2,
+    "area": 484,
+    "image": "/images/Townhouse/Australian_town_house_5e77595f89.jpeg",
+    "gallery": [
+      "/images/Townhouse/Australian_town_house_5e77595f89.jpeg",
+      "/images/Townhouse/Australian_town_house_inside_838434e28f.jpeg",
+      "/images/Townhouse/Australian_town_house_inside_502a2d6326.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning townhouse located in the heart of Gold Coast, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Tennis Court",
+      "Pool",
+      "Gym",
+      "Balcony",
+      "Smart Home System",
+      "Dishwasher"
+    ],
+    "agent": {
+      "name": "Emma Thompson",
+      "phone": "+61 422 333 444",
+      "email": "emma@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Emma%20Thompson&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "27",
+    "title": "Beautiful Townhouse in Sydney",
+    "price": 409,
+    "location": "Sydney, NSW",
+    "status": "rent",
+    "coordinates": [
+      -33.82066405147885,
+      151.22917067094835
+    ],
+    "type": "Townhouse",
+    "beds": 6,
+    "baths": 3,
+    "parking": 0,
+    "area": 285,
+    "image": "/images/Townhouse/Australian_town_houses_df0a1c8059.jpeg",
+    "gallery": [
+      "/images/Townhouse/Australian_town_houses_df0a1c8059.jpeg",
+      "/images/Townhouse/Australian_town_house_bedroom_20a92daabc.jpeg",
+      "/images/Townhouse/Australian_town_house_bedroom_edabcefb43.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning townhouse located in the heart of Sydney, NSW. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Wine Cellar",
+      "Close to Schools",
+      "Ocean View",
+      "Built-in Wardrobes"
+    ],
+    "agent": {
+      "name": "Emma Thompson",
+      "phone": "+61 422 333 444",
+      "email": "emma@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Emma%20Thompson&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "28",
+    "title": "Beautiful Townhouse in Gold Coast",
+    "price": 1531843,
+    "location": "Gold Coast, QLD",
+    "status": "sale",
+    "coordinates": [
+      -28.034494888997127,
+      153.3896356966522
+    ],
+    "type": "Townhouse",
+    "beds": 2,
+    "baths": 2,
+    "parking": 2,
+    "area": 79,
+    "image": "/images/Townhouse/Australian_town_house_8d177224e4.jpeg",
+    "gallery": [
+      "/images/Townhouse/Australian_town_house_8d177224e4.jpeg",
+      "/images/Townhouse/Australian_town_house_bedroom_20a92daabc.jpeg",
+      "/images/Townhouse/Australian_town_house_inside_df1ea4484f.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning townhouse located in the heart of Gold Coast, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Built-in Wardrobes",
+      "Pool",
+      "Garden",
+      "Air Conditioning"
+    ],
+    "agent": {
+      "name": "Sarah Jenkins",
+      "phone": "+61 400 123 456",
+      "email": "sarah@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Sarah%20Jenkins&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "29",
+    "title": "Beautiful Townhouse in Melbourne",
+    "price": 1085036,
+    "location": "Melbourne, VIC",
+    "status": "sale",
+    "coordinates": [
+      -37.76573672121453,
+      144.97115659205
+    ],
+    "type": "Townhouse",
+    "beds": 3,
+    "baths": 3,
+    "parking": 4,
+    "area": 368,
+    "image": "/images/Townhouse/Australian_town_house_8178a5bef4.jpeg",
+    "gallery": [
+      "/images/Townhouse/Australian_town_house_8178a5bef4.jpeg",
+      "/images/Townhouse/Australian_town_house_inside_b98d5fb607.jpeg",
+      "/images/Townhouse/Australian_town_house_inside_32adaafcf3.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning townhouse located in the heart of Melbourne, VIC. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Balcony",
+      "Secure Parking",
+      "Wine Cellar"
+    ],
+    "agent": {
+      "name": "Sarah Jenkins",
+      "phone": "+61 400 123 456",
+      "email": "sarah@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Sarah%20Jenkins&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "30",
+    "title": "Beautiful Townhouse in Gold Coast",
+    "price": 1975087,
+    "location": "Gold Coast, QLD",
+    "status": "sale",
+    "coordinates": [
+      -27.971599776482094,
+      153.3987233915975
+    ],
+    "type": "Townhouse",
+    "beds": 6,
+    "baths": 1,
+    "parking": 2,
+    "area": 141,
+    "image": "/images/Townhouse/Australian_town_house_4f6feac353.jpeg",
+    "gallery": [
+      "/images/Townhouse/Australian_town_house_4f6feac353.jpeg",
+      "/images/Townhouse/Australian_town_house_bathroom_9690b61c15.jpeg",
+      "/images/Townhouse/Australian_town_house_bathroom_562f1e85de.jpeg"
+    ],
+    "featured": false,
+    "description": "A stunning townhouse located in the heart of Gold Coast, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Built-in Wardrobes",
+      "Tennis Court",
+      "Gym"
+    ],
+    "agent": {
+      "name": "Emma Thompson",
+      "phone": "+61 422 333 444",
+      "email": "emma@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Emma%20Thompson&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "31",
+    "title": "Beautiful Land in Brisbane",
+    "price": 1112700,
+    "location": "Brisbane, QLD",
+    "status": "sale",
+    "coordinates": [
+      -27.491610024750052,
+      153.05416693493308
+    ],
+    "type": "Land",
+    "beds": 0,
+    "baths": 0,
+    "parking": 0,
+    "area": 3618,
+    "image": "/images/Land/Australian_city_land_block_c55538408c.jpeg",
+    "gallery": [],
+    "featured": false,
+    "description": "A stunning land located in the heart of Brisbane, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Fireplace",
+      "Wine Cellar",
+      "Balcony",
+      "Gym",
+      "Ocean View",
+      "Smart Home System"
+    ],
+    "agent": {
+      "name": "Emma Thompson",
+      "phone": "+61 422 333 444",
+      "email": "emma@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Emma%20Thompson&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "32",
+    "title": "Beautiful Land in Adelaide",
+    "price": 376803,
+    "location": "Adelaide, SA",
+    "status": "sale",
+    "coordinates": [
+      -34.90244170092729,
+      138.56605251646357
+    ],
+    "type": "Land",
+    "beds": 0,
+    "baths": 0,
+    "parking": 0,
+    "area": 4303,
+    "image": "/images/Land/Australian_suburb_land_block_7560b88058.jpeg",
+    "gallery": [],
+    "featured": false,
+    "description": "A stunning land located in the heart of Adelaide, SA. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Pool",
+      "Garden",
+      "Gym"
+    ],
+    "agent": {
+      "name": "Michael Chen",
+      "phone": "+61 411 987 654",
+      "email": "michael@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Michael%20Chen&background=1a2e4a&color=d4a853&size=200"
+    }
+  },
+  {
+    "id": "33",
+    "title": "Beautiful Land in Brisbane",
+    "price": 1126,
+    "location": "Brisbane, QLD",
+    "status": "rent",
+    "coordinates": [
+      -27.50211718316467,
+      153.04971266303875
+    ],
+    "type": "Land",
+    "beds": 0,
+    "baths": 0,
+    "parking": 0,
+    "area": 2763,
+    "image": "/images/Land/Australian_suburb_land_for_sale_96204a3820.jpeg",
+    "gallery": [],
+    "featured": false,
+    "description": "A stunning land located in the heart of Brisbane, QLD. Features include spacious living areas and modern amenities. Perfect for those looking for luxury and convenience.",
+    "features": [
+      "Built-in Wardrobes",
+      "Fireplace",
+      "Wine Cellar",
+      "Air Conditioning",
+      "Close to Schools",
+      "Dishwasher"
+    ],
+    "agent": {
+      "name": "Sarah Jenkins",
+      "phone": "+61 400 123 456",
+      "email": "sarah@listedhomes.com",
+      "image": "https://ui-avatars.com/api/?name=Sarah%20Jenkins&background=1a2e4a&color=d4a853&size=200"
+    }
+  }
+]

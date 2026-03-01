@@ -1,0 +1,132 @@
+---
+import { SlidersHorizontal, Search as SearchIcon } from "lucide-astro";
+
+export interface Props {
+    searchQuery: string;
+    types: string[];
+    typeParam: string;
+    priceRanges: { label: string; min: number; max: number }[];
+    priceRangeParam: string;
+    bedsOptions: string[];
+    bedsParam: string;
+}
+
+const {
+    searchQuery,
+    types,
+    typeParam,
+    priceRanges,
+    priceRangeParam,
+    bedsOptions,
+    bedsParam,
+} = Astro.props;
+---
+
+<form
+    action="/listings"
+    method="get"
+    class="space-y-8 glass-sidebar p-8 rounded-3xl lg:sticky lg:top-28 h-fit bg-white border border-gray-100 shadow-sm"
+>
+    <div class="flex items-center justify-between mb-2">
+        <h2 class="text-xl font-bold flex items-center">
+            <SlidersHorizontal size={20} class="mr-2 text-accent" />
+            Filters
+        </h2>
+        <a
+            href="/listings"
+            class="text-xs font-bold text-accent uppercase tracking-widest hover:underline"
+            >Reset</a
+        >
+    </div>
+
+    <!-- Search -->
+    <div>
+        <label
+            class="block text-sm font-bold text-gray-400 uppercase tracking-wider mb-3"
+            >Search</label
+        >
+        <div class="relative">
+            <SearchIcon
+                size={18}
+                class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+            />
+            <input
+                type="text"
+                name="q"
+                value={searchQuery}
+                placeholder="City, suburb or zip..."
+                class="w-full bg-gray-50 border border-gray-100 rounded-xl pl-10 pr-4 py-3 text-sm focus:ring-2 focus:ring-accent outline-none"
+            />
+        </div>
+    </div>
+
+    <!-- Property Type -->
+    <div>
+        <label
+            class="block text-sm font-bold text-gray-400 uppercase tracking-wider mb-3"
+            >Property Type</label
+        >
+        <select
+            name="type"
+            class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-accent outline-none"
+        >
+            {
+                types.map((type) => (
+                    <option value={type} selected={type === typeParam}>
+                        {type}
+                    </option>
+                ))
+            }
+        </select>
+    </div>
+
+    <!-- Price Range -->
+    <div>
+        <label
+            class="block text-sm font-bold text-gray-400 uppercase tracking-wider mb-3"
+            >Price Range</label
+        >
+        <select
+            name="priceRange"
+            class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-accent outline-none"
+        >
+            {
+                priceRanges.map((range) => (
+                    <option
+                        value={range.label}
+                        selected={range.label === priceRangeParam}
+                    >
+                        {range.label}
+                    </option>
+                ))
+            }
+        </select>
+    </div>
+
+    <!-- Bedrooms -->
+    <div>
+        <label
+            class="block text-sm font-bold text-gray-400 uppercase tracking-wider mb-3"
+            >Bedrooms</label
+        >
+        <select
+            name="beds"
+            class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-accent outline-none"
+        >
+            {
+                bedsOptions.map((bed) => (
+                    <option value={bed} selected={bed === bedsParam}>
+                        {bed}
+                    </option>
+                ))
+            }
+        </select>
+    </div>
+
+    <button
+        type="submit"
+        class="w-full bg-primary text-white py-4 rounded-xl font-bold hover:bg-secondary transition-all shadow-lg shadow-primary/20"
+    >
+        Apply Filters
+    </button>
+</form>

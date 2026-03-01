@@ -1,0 +1,43 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Premium Real Estate Listing Website" } =
+	Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | ListedHomes</title>
+		<meta name="description" content={description} />
+	</head>
+	<body class="min-h-screen flex flex-col">
+		<Navbar />
+		<main class="flex-grow">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--accent-gradient: linear-gradient(
+			45deg,
+			var(--color-accent),
+			#fbbf24 30%,
+			white 60%
+		);
+	}
+</style>

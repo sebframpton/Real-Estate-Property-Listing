@@ -1,0 +1,102 @@
+---
+import { Home, Search, Heart, User, Menu, X } from "lucide-astro";
+
+const navLinks = [
+    { name: "Buy", href: "/listings?status=sale" },
+    { name: "Rent", href: "/listings?status=rent" },
+    { name: "Sell", href: "/sell" },
+    { name: "Agents", href: "/agents" },
+];
+---
+
+<nav
+    class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100"
+>
+    <div class="container mx-auto px-4 h-20 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="/" class="flex items-center space-x-2">
+            <div class="bg-primary text-accent p-1.5 rounded-lg">
+                <Home size={24} />
+            </div>
+            <span
+                class="text-2xl font-display font-bold text-primary tracking-tight"
+            >
+                Listed<span
+                    class="text-accent underline decoration-2 underline-offset-4"
+                    >Homes</span
+                >
+            </span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-8">
+            {
+                navLinks.map((link) => (
+                    <a
+                        href={link.href}
+                        class="text-text-main hover:text-accent font-medium transition-colors"
+                    >
+                        {link.name}
+                    </a>
+                ))
+            }
+        </div>
+
+        <!-- Desktop Actions -->
+        <div class="hidden md:flex items-center space-x-4">
+            <button
+                class="p-2 text-text-main hover:bg-gray-100 rounded-full transition-colors"
+                onclick="window.location.href='/listings'"
+            >
+                <Heart size={20} />
+            </button>
+            <a
+                href="/signin"
+                class="bg-accent text-secondary px-6 py-2.5 rounded-lg font-bold hover:bg-accent/90 transition-all shadow-sm flex items-center space-x-2"
+            >
+                Sign In
+            </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-primary">
+            <Menu size={28} />
+        </button>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg"
+    >
+        <div class="flex flex-col p-4 space-y-4">
+            {
+                navLinks.map((link) => (
+                    <a
+                        href={link.href}
+                        class="text-lg font-medium text-text-main px-4 py-2 hover:bg-gray-50 rounded-lg"
+                    >
+                        {link.name}
+                    </a>
+                ))
+            }
+            <hr class="border-gray-100" />
+            <a
+                href="/signin"
+                class="flex items-center justify-between px-4 pb-2 text-text-main hover:bg-gray-50 rounded-lg py-2"
+            >
+                <span class="font-medium">Sign In</span>
+                <User size={20} />
+            </a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    btn?.addEventListener("click", () => {
+        menu?.classList.toggle("hidden");
+    });
+</script>

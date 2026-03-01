@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Client Testimonials | ListedHomes">
+    <div class="bg-primary text-white py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold font-display mb-4 italic">
+                Client <span class="text-accent underline">Testimonials</span>
+            </h1>
+            <p class="text-gray-300">What our clients say about us.</p>
+        </div>
+    </div>
+
+    <section
+        class="py-24 bg-white min-h-[50vh] flex items-center justify-center"
+    >
+        <div class="text-center max-w-2xl px-4">
+            <h2 class="text-3xl font-bold text-primary mb-6">
+                Success Stories
+            </h2>
+            <p class="text-gray-500 text-lg mb-8 leading-relaxed">
+                "ListedHomes provided an exceptional, seamless experience. Their
+                dedication and expertise helped us secure our dream property
+                faster than we imagined." - The Smith Family
+            </p>
+            <a
+                href="/listings"
+                class="inline-flex px-8 py-3 bg-accent text-secondary font-bold rounded-xl hover:bg-accent/90 transition-all"
+            >
+                Find Your Dream Home
+            </a>
+        </div>
+    </section>
+</Layout>
