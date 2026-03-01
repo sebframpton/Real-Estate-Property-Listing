@@ -6,8 +6,13 @@ const projectRoot = path.join(__dirname, '..');
 const dataPath = path.join(projectRoot, 'src', 'data', 'properties.json');
 const imagesBaseDir = path.join(projectRoot, 'public', 'images');
 
-// Folder names now exactly match the property "type" values in properties.json
-const validTypes = ['House', 'Unit', 'Townhouse', 'Land'];
+const validTypesMapping = {
+    'House': 'Home',
+    'Unit': 'Unit',
+    'Townhouse': 'Townhouse',
+    'Land': 'Land'
+};
+const validTypes = Object.keys(validTypesMapping);
 
 // Keywords that mark interior/inside photos
 const interiorKeywords = ['inside', 'interior', 'bathroom', 'bedroom', 'kitchen'];
@@ -18,15 +23,16 @@ function isInterior(filename) {
 }
 
 function getImages(type) {
-    const dir = path.join(imagesBaseDir, type);
+    const folderName = validTypesMapping[type];
+    const dir = path.join(imagesBaseDir, folderName);
     if (!fs.existsSync(dir)) {
         console.error(`  [ERROR] Folder not found: ${dir}`);
         return { exterior: [], interior: [] };
     }
 
-    const all = fs.readdirSync(dir).filter(f => /\.(jpeg|jpg|png|webp)$/i.test(f));
-    const exterior = all.filter(f => !isInterior(f)).map(f => `/images/${type}/${f}`);
-    const interior = all.filter(f =>  isInterior(f)).map(f => `/images/${type}/${f}`);
+    const all = fs.readdirSync(dir).filter(f => /\.(jpeg|jpg|png|webp|avif)$/i.test(f));
+    const exterior = all.filter(f => !isInterior(f)).map(f => `/images/${folderName}/${f}`);
+    const interior = all.filter(f =>  isInterior(f)).map(f => `/images/${folderName}/${f}`);
 
     console.log(`  [${type}] ${exterior.length} exterior, ${interior.length} interior`);
     return { exterior, interior };
